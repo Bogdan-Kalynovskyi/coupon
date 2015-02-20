@@ -1,0 +1,46 @@
+/* component instantiation with json format options */
+var container1 = document.getElementById('container1'); // a div element as the container of the generated map
+var coupon1 = new Coupon({
+	id: 'tab1',
+	containerElement: container1,
+	componentData: { // data for this component
+		mainImg : '', // url of the image
+		themeStyle : {
+			bgColor : '',  // background color of the whole component
+			buttonColor : '',  // color of the claim buttons. Also the background color of the coupon code textBox
+			textColor : '', // text color of claim button and overlayMessage. The button border color will follow the textColor as well
+		},
+		claimButtons : [
+			{
+				buttonType : 'site', // the type of button (site, download, code)
+				buttonText : 'Visit Website', // text of the button
+				actionValue : 'http://sample.website.com' // the value for click action (site and download button type will have a url that will open upon click. code button type will have a coupon code that will show upon click)
+			},
+			{
+				buttonType : 'download', // the type of button (site, download, code)
+				buttonText : 'Download', // text of the button
+				actionValue : 'http://download.coupon.com' // the value for click action (site and download button type will have a url that will open upon click. code button type will have a coupon code that will show upon click)
+			},
+			{
+				buttonType : 'code', // the type of button (site, download, code)
+				buttonText : 'Show Code', // text of the button
+				actionValue : 'COUPONCODE123', // the value for click action (site and download button type will have a url that will open upon click. code button type will have a coupon code that will show upon click)
+				overlayMessage : 'Coupon Code Below' // only applicable to buttonType='code'. This is the message that will show in the show coupon code overlay
+			}
+		],
+		socialShare : {
+			status : '1', // whether to enable or disable social sharing (1=enable, 0=disable)
+			preClaim : '1', // whether to show the social sharing before user can claim coupon (hide close button for this case)
+			postClaim : '1', // whether to show the social sharing after user claim coupon (show close button for this case)
+			overlayMessage : 'Share!', // This is the message that will show in the share overlay
+			shareValue : 'http://download.coupon.com', // value to share. Determine what to share during social sharing. Can share the website url, coupon url or the coupon code
+			shareMessage : 'This coupon is cool! Get it here: http://download.coupon.com', // the default share message
+		}
+	}
+});
+
+/* Coupon component plugin should be in this format or something similar */
+function Coupon (options) {
+    var id = options.id; // local variables that can only be accessed within the instantiated object
+    ... // and any additional local variables and data
+}

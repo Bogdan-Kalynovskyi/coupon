@@ -95,7 +95,7 @@ svg {
 
 .icon {
     display: inline-block;
-    margin: 16px;
+    margin: 16px 16px 0 16px;
 }
 
 .icon svg {

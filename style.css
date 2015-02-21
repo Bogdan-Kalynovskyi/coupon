@@ -30,7 +30,6 @@ header img {
 }
 
 footer {
-    background: red;
     width: 100%;
     height: 35px;
     position: absolute;
@@ -40,23 +39,27 @@ footer {
 }
 
 a {
-    margin: 5px 3px;
-    /*background: red;*/
-    color: white;
-    display: inline-block;
-    text-align: center;
-    border-radius: 5px;
-    border: 2px solid white;
-    white-space: nowrap;
-    padding: 2px 4px 4px 4px;
-    font-size: 12px;
     text-decoration: none;
 }
 
-svg {
+footer a {
+    margin: 5px 3px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    white-space: nowrap;
+    padding: 2px 4px 4px 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+footer svg {
     vertical-align: middle;
     width: 16px;
     height: 15px;
+    margin-right: 4px;
 }
 
 .overlay {
@@ -68,7 +71,7 @@ svg {
     background: rgba(122, 122, 122, .8);
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    color: #fff;
+    display: none;
 }
 
 .overlay .icon-close {
@@ -77,6 +80,7 @@ svg {
     right: 5px;
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 
 .overlay .centered {
@@ -86,6 +90,7 @@ svg {
     -webkit-transform: translateY(-50%) translateX(-50%);
     -ms-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
+    width: 226px;
 }
 
 .centered div {
@@ -104,13 +109,18 @@ svg {
 }
 
 div.coupon-code {
-    background: rgb(255, 56, 35);
+    /*background: rgb(255, 56, 35);*/
     border-radius: 4px;
-    border: 1px solid white;
+    border-width: 1px;
+    border-style: solid;
     font-size: 14px;
     height: 34px;
     width: 226px;
     margin-top: 4px;
     margin-bottom: 18px;
     line-height: 34px;
+}
+
+#couponCodeBlock {
+    display: none;
 }

@@ -30,7 +30,7 @@ var coupon1 = new Coupon({
 		],
 		socialShare : {
 			status : '1', // whether to enable or disable social sharing (1=enable, 0=disable)
-			preClaim : '1', // whether to show the social sharing before user can claim coupon (hide close button for this case)
+			preClaim : '0', // whether to show the social sharing before user can claim coupon (hide close button for this case)
 			postClaim : '1', // whether to show the social sharing after user claim coupon (show close button for this case)
 			overlayMessage : 'Share!', // This is the message that will show in the share overlay
 			shareValue : 'http://download.coupon.com', // value to share. Determine what to share during social sharing. Can share the website url, coupon url or the coupon code

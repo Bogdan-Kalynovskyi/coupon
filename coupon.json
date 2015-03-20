@@ -1,7 +1,4 @@
 coupon = '[{\
-    "id":"tab1",\
-    "containerElement":"container1",\
-    "componentData": {\
       "mainImg": "1212as.jpg",\
       "themeStyle": {\
         "bgColor": "#f00",\
@@ -28,11 +25,10 @@ coupon = '[{\
       ],\
       "socialShare" : {\
         "status": "1",\
-        "preClaim": "0",\
+        "preClaim": "1",\
         "postClaim": "0",\
         "overlayMessage": "Share!",\
         "shareValue": "http://download.coupon.com",\
         "shareMessage": "This coupon is cool! Get it here: http://download.coupon.com"\
       }\
-    }\
   }]';

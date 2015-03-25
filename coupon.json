@@ -25,8 +25,8 @@ coupon = '[{\
       ],\
       "socialShare" : {\
         "status": "1",\
-        "preClaim": "1",\
-        "postClaim": "0",\
+        "preClaim": "0",\
+        "postClaim": "1",\
         "overlayMessage": "Share!",\
         "shareValue": "http://download.coupon.com",\
         "shareMessage": "This coupon is cool! Get it here: http://download.coupon.com"\
